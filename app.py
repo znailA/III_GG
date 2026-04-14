@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Hello from Docker! Telegram:@III_GG"
+    return "Hello from Docker!"
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8080))
