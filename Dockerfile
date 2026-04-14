@@ -2,10 +2,12 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
-COPY . .
+COPY . /app
 
-RUN pip install flask
+RUN pip install --no-cache-dir flask
 
 ENV PORT=8080
+
+EXPOSE 8080
 
 CMD ["python", "app.py"]
